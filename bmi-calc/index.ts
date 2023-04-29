@@ -1,7 +1,7 @@
-import {LousyConverter} from '../dist/main';
+import {LousyConverter,type as ILousyConverter} from '../dist/main';
 import {LengthUnits,WeightUnits} from '../dist/types/units';
 
-const converter = new LousyConverter();
+const converter: ILousyConverter  = new LousyConverter();
 
 
 const height = 170;

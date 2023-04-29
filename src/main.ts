@@ -3,11 +3,12 @@
  */
 
 import { ConversionLogger } from "./libs/logger";
+import { ILousyConverter } from "./types/ILousyConverterLib";
 import { LengthUnits, Units, WeightUnits } from "./types/units";
 import { LengthConverter } from "./variants/length";
 import { MassConverter } from "./variants/mass";
 
-export class LousyConverter {
+export class LousyConverter implements ILousyConverter {
     private _length = new LengthConverter();
     private _mass = new MassConverter()
     private _logger = new ConversionLogger();
@@ -28,5 +29,5 @@ export class LousyConverter {
 }
 
 export type units = Units;
-
+export type type = ILousyConverter;
 
