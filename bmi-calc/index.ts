@@ -1,13 +1,13 @@
-import {LousyConverter} from '../dist/src/main';
-import {LengthUnits,WeightUnits} from '../dist/src/types/units';
+import {LousyConverter} from '../dist/main';
+import {LengthUnits,WeightUnits} from '../dist/types/units';
 
 const converter = new LousyConverter();
 
 
-const height = 1.70;
+const height = 170;
 const weight = 190;
 const weightUnit = WeightUnits.POUNDS;
-const heightUnit = LengthUnits.METER;
+const heightUnit = LengthUnits.CENTIMETER;
 
 function calculateBMI(){
 

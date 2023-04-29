@@ -31,7 +31,7 @@ let value: number;
 let value2: number;
 let op: Operation
 
-readline.question("Select app. Converter=1, Calculator=2", (answer) => {
+readline.question("Select app. Converter=1, Calculator=2 \t", (answer) => {
   if (answer === "1") {
     isConverter=true;
     readline.question(
